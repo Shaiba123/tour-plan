@@ -9,6 +9,25 @@
   &__search
     margin-right: auto
     margin-left: 108px
+  &-bottom
+    background-color: $dark
+  &-menu
+    list-style-type: none //Убираем маркеры (точки)
+    margin: 0 //Убираем отступы
+    display: flex
+    padding: 31px 0
+    align-items: center
+    justify-content: space-between   
+    color: $light   
+    &__link
+      color: inherit //Берет цвет родителя
+      text-decoration: none //Убираем подчеркивание
+      text-transform: uppercase // Заглавные буквы
+      font-size: 14px
+      line-height: 18px
+.logo
+  width: 177px
+  height: auto
 .search
   display: flex
   position: relative //фиксированная позиция
