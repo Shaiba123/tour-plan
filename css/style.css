@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -533,6 +534,23 @@ th {
   color: #333333;
 }
 
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -555,10 +573,7 @@ th {
     margin-right: 74px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 22px;
+    padding: 22 15 22 15;
   }
   .navbar-menu__link {
     font-size: 12px;
