@@ -6,7 +6,12 @@
    margin: 0
    list-style: none
    &__item // Для всех элементов breadcrumb-list__item
+     font-size: 10px
+     line-height: 13px
      &:not(:last-child) // но не для последнего
       &::after // нужно применить
         content: '/' // со знаком слэш
         margin-right: 4px // и правым отступом 4 пикселя
+   &__link
+     text-decoration: none
+     color: inherit // цвет как у родителя
